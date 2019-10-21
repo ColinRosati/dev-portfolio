@@ -170,12 +170,8 @@ p {
     z-index: 150;
 }
 
-#cancelButton {
-    width: 10%;
-    right: 10px;
-    top: 10px;
-    position: fixed;
-    z-index: 150;
+.rotate {
+    transform: rotate(90%);
 }
 
 .flex {

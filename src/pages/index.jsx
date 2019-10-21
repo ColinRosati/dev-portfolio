@@ -11,20 +11,38 @@ import closeImg from '../assets/cancel-button.png'
 const IndexPage = () => {
   
   function CloseImage(props) {
-    return <img src={closeImg} className="closeButton" alt-text="image"></img>
+    return <img src={closeImg} className="closeButton" alt=""></img>
   } 
 
   function CloseHead(props) {
 
-    function handleClick(e) {
+    const handleClick = (e) => {
+      console.log("close")
         e.preventDefault();
-        document.body.classList.add("hide")
+        document.body.classList.toggle("hide")
         setTimeout(() => {
-          // return <Router><Route exact path="/" component={IndexSite} /> </Router>
+          return <Router><Route exact path="/" component={IndexSite} /> </Router>
         }, 500)
     }
 
-    return <CloseImage href={IndexPage} onClick = { handleClick } ></CloseImage>
+    const handleEnter = (e) => {
+      // console.log("enter",e, e.target.className)
+        let close =  document.getElementsByClassName('close-wrapper')
+        // console.log(close, typeof close, e.target.className)
+        // document.getElementsByClassName('close-wrapper')
+        var x = document.getElementsByClassName('closeButton')[0]
+        console.log(x)
+        // document.getElementsByClassName
+        // document.getElementById("closerButton").classList.add("rotate");
+        x.classlist.add("rotate")
+       
+    }
+    // return <button onClick={handleClick}>cilck</button>
+    return (
+      <div className="close-wrapper" onClick={handleClick} onMouseEnter={handleEnter} >
+        <CloseImage href={IndexPage} ></CloseImage>
+      </div>
+    )
 }
 
   function HeadTitle(props) {
@@ -44,17 +62,10 @@ const IndexPage = () => {
       console.log("hovering")
   }
 
-  function Link(){}
-
   function LinkTitle(url) {
-      return <a href={url.href} 
-                style={linkStyle}
-                >{url.children}</a>
+      return <a href={url.href} style={linkStyle} >{url.children}</a>
   }
 
-    // function LinkTitle(url) {
-    //     return <Link to={url.href} style={linkStyle}></Link>
-    // }
 
   function LinkTitleHover(url) {
       return <a href={url.href} style={linkStyleHover}>{url.children}</a>

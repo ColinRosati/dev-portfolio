@@ -17,14 +17,14 @@ const About = () => {
       console.log("props",props)
     return (
         <a href={props.hrefname}>
-            <img src={closeImg} className="closeButton" alt-text="image"></img>
+            <img src={closeImg} className="closeButton" alt=""></img>
         </a>
     )
 }
 
 function CloseHead(props) {
 
-    function handleClick(e) {
+    const handleClick = (e) => {
         e.preventDefault();
         document.body.classList.add("hide")
         setTimeout(() => {
@@ -32,7 +32,11 @@ function CloseHead(props) {
         }, 500)
     }
 
-    return <CloseImage href={IndexPage} onClick = { handleClick } ></CloseImage>
+    return (
+        <div className="close-wrapper" onClick={handleClick} >
+          <CloseImage href={IndexPage} ></CloseImage>
+        </div>
+      )
 }
 
   function TextBox(props){
@@ -48,7 +52,7 @@ function CloseHead(props) {
   function ImgBox(props){
   return( 
           <div className="flex">
-              <div className="flex-box"><img className="headshot" src={portraitImg}></img></div>
+              <div className="flex-box"><img className="headshot" src={portraitImg} alt=""></img></div>
           </div>
       )
   }

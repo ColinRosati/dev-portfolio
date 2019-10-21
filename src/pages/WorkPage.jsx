@@ -1,6 +1,6 @@
 import React from 'react'; 
 import '../styles/index.css'
-// import ReactDOM from 'react-dom';
+import IndexPage from "./index"
 
 const WorkPage = () => {
   
@@ -17,7 +17,7 @@ const WorkPage = () => {
       }
 
       return ( 
-          <a href = "" onClick = { handleClick } >
+          <a href ={IndexPage} onClick = { handleClick } >
               <CloseImage></CloseImage>
           </a >
       );
@@ -39,8 +39,6 @@ const WorkPage = () => {
   function hovering(props){
       console.log("hovering")
   }
-
-  function Link(){}
 
   function LinkTitle(url) {
       return <a href={url.href} 
