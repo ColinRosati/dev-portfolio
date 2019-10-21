@@ -1,27 +1,38 @@
 import React from 'react'; 
-// import aboutStyles from '../styles/about.css'
-// import ReactDOM from 'react-dom';
+import styled from 'styled-components';
+import '../styles/about.css'
+import {
+    BrowserRouter as Router,
+    Route,
+  } from "react-router-dom";
+import IndexPage from "./index"
 
-const AboutPage = () => {
-  
+import closeImg from '../assets/cancel-button.png'
+import portraitImg from '../assets/headshot.png'
+
+
+const About = () => {
+    
   function CloseImage(props) {
-    return <img src="../attributes/cancel-button.png" className="closeButton" alt="image"></img>
+      console.log("props",props)
+    return (
+        <a href={props.hrefname}>
+            <img src={closeImg} className="closeButton" alt-text="image"></img>
+        </a>
+    )
 }
 
 function CloseHead(props) {
 
-    function handleClick() {
+    function handleClick(e) {
+        e.preventDefault();
         document.body.classList.add("hide")
         setTimeout(() => {
-            window.location = "http://localhost/developerportfolio-react/index.html";
+          return <Router><Route exact path="/" component={IndexPage} /> </Router>
         }, 500)
     }
 
-    return ( 
-        <a href = "" onClick = { handleClick } >
-            <CloseImage></CloseImage>
-        </a >
-    );
+    return <CloseImage href={IndexPage} onClick = { handleClick } ></CloseImage>
 }
 
   function TextBox(props){
@@ -37,18 +48,19 @@ function CloseHead(props) {
   function ImgBox(props){
   return( 
           <div className="flex">
-              <div className="flex-box"><img className="headshot" src="img/headshot.png"></img></div>
+              <div className="flex-box"><img className="headshot" src={portraitImg}></img></div>
           </div>
       )
   }
 
-  const scroll = window.styled.keyframes`
-  100% { 
-      -webkit-transform: translateX(-400%);  
-    }
-  `
+  const scroll =''
+//   const scroll = window.styled.keyframes`
+//   100% { 
+//       -webkit-transform: translateX(-400%);  
+//     }
+//   `
 
-  const FootWrapper = window.styled.div`
+  const FootWrapper = styled.div`
   margin-top:.7em;
   padding: 0.1em;
   font-size:4em;
@@ -57,7 +69,7 @@ function CloseHead(props) {
   width:100vw;
   `;
 
-  const  FooterSkillz = window.styled.div`
+  const  FooterSkillz = styled.div`
   padding: 0.1em;
   color:white;
   background: ${props => props.color};
@@ -120,11 +132,11 @@ function CloseHead(props) {
 
   return (
     <div className="App">
-      <CloseHead/>,
+      <CloseHead/>
       <Content/>
     </div>
   )
 
 }
 
-export default AboutPage;
+export default About;

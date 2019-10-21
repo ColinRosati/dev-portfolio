@@ -1,32 +1,31 @@
 import React from 'react'; 
+import '../styles/index.css'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect
-  } from "react-router-dom";
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
+import IndexSite from "./index"
+
+import closeImg from '../assets/cancel-button.png'
 
 const IndexPage = () => {
   
   function CloseImage(props) {
-    return <img src="../attributes/cancel-button.png" className="closeButton"></img>
+    return <img src={closeImg} className="closeButton" alt-text="image"></img>
   } 
 
   function CloseHead(props) {
-      function handleClick() {
-          document.body.classList.add("hide")
-          setTimeout(() => {
-              window.location = "file:///C:/Users/colin/Documents/work/Portfolio%20Developer/index.html";
-          }, 500)
-      }
 
-      return ( 
-          <a href = "" onClick = { handleClick } >
-              <CloseImage></CloseImage>
-          </a >
-      );
-  }
+    function handleClick(e) {
+        e.preventDefault();
+        document.body.classList.add("hide")
+        setTimeout(() => {
+          // return <Router><Route exact path="/" component={IndexSite} /> </Router>
+        }, 500)
+    }
+
+    return <CloseImage href={IndexPage} onClick = { handleClick } ></CloseImage>
+}
 
   function HeadTitle(props) {
       return <h1>{props.children}</h1>
@@ -58,15 +57,13 @@ const IndexPage = () => {
     // }
 
   function LinkTitleHover(url) {
-      return <a href={url.href} 
-                style={linkStyleHover}
-                >{url.children}</a>
+      return <a href={url.href} style={linkStyleHover}>{url.children}</a>
   }
 
     function Nav (props){
-      var aboutL = "about.html";
-      var workL = "work.html";
-      var contactL = "contact.html";
+      var aboutL = "about";
+      var workL = "work";
+      var contactL = "contact";
 
       return(
           <div  className="content">

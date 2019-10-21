@@ -10,7 +10,7 @@ import {
 
 //Pages
 import IndexPage from "./pages/index"
-import about from "./pages/AboutPage"
+import About from "./pages/AboutPage"
 import WorkPage from "./pages/WorkPage"
 import NotFound from "./pages/404"
 
@@ -21,10 +21,10 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route exact path="/" component={IndexPage} />
-          <Route path="/about" component={about} />
-          <Route path="/work" component={WorkPage} />
+          <Route path="/about" component={About} />
+          <Route exact path="/work" component={WorkPage} />
           <Route component={NotFound}/>
-          <Link to="/about">about</Link>
+          {/* <Link to="/about">about</Link> */}
         </Switch>
        
       </Router>
