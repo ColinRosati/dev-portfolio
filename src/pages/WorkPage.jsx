@@ -39,14 +39,15 @@ const WorkPage = () => {
   }
 
   const Projects = (props) => {
+    var linker = "http:// "+ props.link
     return (
       <div >
       <div className="project">
         <div className="project-head">
-        <a href={props.link}><h6>{props.head}</h6></a>
+        <a href={props.link}>{props.head}</a>
         </div>
         <div className="project-content">
-        <a href={props.link}><p>{props.link}</p></a>
+        {/* <a href={linker}><p>{props.linkTitle}</p></a> */}
         <p>{props.details}</p>
         </div>
         </div>
@@ -63,12 +64,12 @@ const WorkPage = () => {
     return(
       <div>
         <WorkHead/>
-        <Projects head={"Bunker3"} link={"www.bunker3.ca"} details={"Data Visualization →Design, Development, D3.js"}/>
-        <Projects head={"Agar Studio"} link={"www.agarstudio.com"} details={"Design Studio →Development"}/>
-        <Projects head={"FTI Scope Data Collector web app"} link={"Raspberry PI Server"} details={"Web App & Raspberry Pi server →Design, Development, Node.js, Bash script, SPA"}/>
-        <Projects head={"Contact Page"} link={"www.bunker3.ca"} details={"Data Visualization →Design, Development, D3.js"}/>
-        <Projects head={"Gnothi Sauton"} link={"gnothisauton.xyz"} details={"Speculative Design → Development, Bootstrap.js"}/>
-        <Projects head={"Whatify"} link={"whatify.world"} details={"Speculative Design → Development, Bootstrap.js, FaceBook API"}/>
+        <Projects head={"Bunker3"} link={"www.bunker3.ca"} linkTitle={"Bunker3"} details={"Design, Development → D3.js, HTML, ES6"}/>
+        <Projects head={"Agar Studio"} link={"www.agarstudio.com"} linkTitle={"AGAR"} details={"Development → Wordpress, ES6"}/>
+        <Projects head={"FTI Scope Data Collector web app"} link={"https://github.com/ColinRosati1/data_collector"} linkTitle={"Raspberry PI Server"} details={"Design, Development  →  Node.js, Bash scripts"}/>
+        <Projects head={"Custom Contact Page"} link={"http://agarstudio.com/wp-content/themes/agar/avalanche/agar-avalanche.html"}  linkTitle={"AGAR"} details={"Development → Worpress, ES6"}/>
+        <Projects head={"Gnothi Sauton"} link={"gnothisauton.xyz"} linkTitle={"Gnothi Sauton"} details={"Design, Development → HTML, Bootstrap, ES6"}/>
+        <Projects head={"Whatify"} link={"whatify.world"} linkTitle={"Whatify"} details={"Design, Development → HTML, Bootstrap.js, FaceBook API"}/>
       </div>
     )
   }

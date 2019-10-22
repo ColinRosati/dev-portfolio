@@ -125,18 +125,18 @@ a {
     color: #000;
 }
 
-p {
+.project-content p {
     margin-top: 0;
     font-size: 1.25rem;
     margin-bottom: 90px;
     padding: 0px 60px;
     color: #000;
-    font-weight: 400;
     line-height: 1.5;
     display: block;
     margin-block-end: 2em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .closeButton {
@@ -177,6 +177,10 @@ p {
 
 .project-head {
     padding: 0 0 0 5%;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 40%;
 }
 
 .project-content {
@@ -187,120 +191,11 @@ p {
 
 /* NEW CODE */
 
-#workBlock {
-    padding-top: 5%;
-    width: 90%;
-    position: absolute;
-    padding-bottom: 20%;
-}
-
-.grid--full {
-    margin-left: 0;
-}
-
-.grid,
-.grid--rev,
-.grid--full,
-.grid-uniform {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: -25px;
-}
-
-.client-group {
-    /* border-style: solid; */
-    /* border-radius: 3px; */
-    margin-top: -3px;
-    /* position: relative; */
-    z-index: 100;
-}
-
-.grid__item {
-    box-sizing: border-box;
-    float: left;
-    min-height: 1px;
-    padding: 25px;
-    vertical-align: top;
-    width: 100%;
-}
-
-.large--two-thirds {
-    width: 66.666%;
-}
-
-.one-whole {
-    width: 100%;
-    /* border-style: solid; */
-    /* border-radius: 5px; */
-    border-bottom: solid 3px;
-}
-
-.one-third {
-    width: 33.333%;
-}
-
-.smallest {
-    font-size: 0.33em;
-    font-weight: bold;
-    letter-spacing: -0.025em;
-    vertical-align: top;
-}
-
-html.w-o *,
-body.w-o * {
-    /* background-color: transparent;
-    border-color: #000;
-    color: #000; */
-}
-
-.circle-c {
-    width: 106px;
-    display: inline-block;
-    padding: 10px;
-}
-
-.circle-c .circle {
-    width: 90px;
-    height: 90px;
-}
-
-.circle-c .circle {
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    display: table;
-}
-
-.client-content {
-    /* height: 115px; */
-    /* width: calc(100% - 110px); */
-}
-
-.bb {
-    /* border-bottom-width: 4.5px; */
-}
-
-.br {
-    /* border-right-width: 4.5px; */
-}
-
-.bl {
-    /* border-left-width: 4.5px; */
-}
-
-.hh {
-    height: 60px;
-    margin: 10px;
-}
-
-.mh {
-    height: 131px;
-    /* overflow: hidden; */
-}
-
 
 /* ============================================= Responsive ============================================= */
+
+
+/* tiny screens  iphone 5 */
 
 @media (max-width: 320px) {
     body {
@@ -309,55 +204,35 @@ body.w-o * {
         padding-right: 30px;
         height: 100vh;
     }
-    #workBlock {
-        padding-top: 5%;
-        width: 80%;
-        padding-left: 2%;
-        /* position: absolute; */
-        padding-bottom: 20%;
+    .work-head h1 {
+        font-size: 1em;
     }
-    h1,
-    h2,
-    p {
-        font-size: 3.25rem;
-        font-weight: 400;
-        line-height: 0.8;
-    }
-    p {
-        padding: 0px;
-    }
-    #aboutBlock p {
-        font-size: 2.3rem;
-        line-height: 1.1;
-    }
-    .flex {
-        width: 220px;
-        /* height: 600px; */
-        margin: auto;
-        display: flex;
+    .project {
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
-    .large--two-thirds {
-        font-size: 0.5em;
-        display: block;
-        width: 100%;
+    .project-head {
+        font-size: 36px;
+        max-width: 90%;
+        padding: 0 0 8% 0;
     }
-    .smallest {
-        font-size: 0.23em;
-        font-weight: bold;
-        letter-spacing: -0.025em;
-        vertical-align: top;
-        padding-top: 0px;
+    .project-content {
+        width: 60%
     }
-    .one-third {
-        display: block;
-        width: 100%;
+    .project-content p {
+        padding: 0;
     }
-    #cancelButton {
-        padding-right: 1%;
+    .closeButton {
+        width: 10%;
+        padding-top: 10px;
+        position: fixed;
+        z-index: 150;
+        padding-right: 5%;
     }
 }
+
+
+/* iphone 6, 7, 8 */
 
 @media screen and (max-width: 400px) and (min-width: 360px) {
     body {
@@ -366,66 +241,31 @@ body.w-o * {
         padding-right: 30px;
         height: 100vh;
     }
-    #workBlock {
-        padding-top: 5%;
-        /* width: 95%; */
-        /* padding-left: 5%; */
-        /* position: absolute; */
-        padding-bottom: 20%;
+    .work-head h1 {
+        font-size: 1em;
     }
-    h1,
-    h2,
-    p {
-        font-size: 3.25rem;
-        font-weight: 400;
-        line-height: 0.8;
-    }
-    p {
-        padding: 0px;
-    }
-    #aboutBlock p {
-        font-size: 2.3rem;
-        line-height: 1.1;
-    }
-    .flex {
-        width: 250px;
-        /* height: 600px; */
-        margin: auto;
-        display: flex;
+    .project {
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
-    .one-whole {
-        /* width: 75%; */
+    .project-head {
+        font-size: 36px;
+        max-width: 90%;
+        padding: 0 0 8% 0;
     }
-    .large--two-thirds {
-        font-size: 0.5em;
-        display: block;
-        width: 100%;
+    .project-content {
+        width: 60%
     }
-    .smallest {
-        font-size: 0.23em;
-        font-weight: bold;
-        letter-spacing: -0.025em;
-        vertical-align: top;
-        padding-top: 0px;
+    .project-content p {
+        padding: 0;
     }
-    .one-third {
-        display: block;
-        width: 100%;
-    }
-    #cancelButton {
-        padding-right: 1%;
-    }
-    .client-group {
-        width: 90%;
-        margin-left: 0%;
-    }
-    .hh {
-        height: 100%;
-        margin: 10px;
+    .closeButton {
+        padding-right: 5%;
     }
 }
+
+
+/* iphone plus 6+, 7+, 8+ */
 
 @media screen and (max-width: 414px) and (min-width: 401px) {
     body {
@@ -435,72 +275,31 @@ body.w-o * {
         height: 100vh;
         margin: 0px;
     }
-    #workBlock {
-        padding-top: 5%;
-        width: 80%;
-        padding-left: 5%;
-        position: absolute;
-        padding-bottom: 20%;
+    .work-head h1 {
+        font-size: 1em;
     }
-    h1,
-    h2,
-    p {
-        font-size: 4.25rem;
-        font-weight: 400;
-        line-height: 0.8;
-    }
-    p {
-        padding: 0px;
-    }
-    #aboutBlock p {
-        padding-top: 5%;
-        font-size: 2.5rem;
-        line-height: 1.2;
-    }
-    .flex {
-        width: 300px;
-        /* height: 600px; */
-        margin: auto;
-        display: flex;
+    .project {
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
-    .grid p {
-        font-size: 3.25rem;
-        font-weight: 400;
-        line-height: 0.8;
+    .project-head {
+        font-size: 36px;
+        max-width: 90%;
+        padding: 0 0 8% 0;
     }
-    .grid__item {
-        padding-top: 25px;
-        vertical-align: top;
-        width: 100%;
+    .project-content {
+        width: 60%
     }
-    .one-whole {
-        /* width: 75%; */
+    .project-content p {
+        padding: 0;
     }
-    .large--two-thirds {
-        font-size: 0.5em;
-        display: block;
-        width: 100%;
-    }
-    .smallest {
-        font-size: 0.23em;
-        font-weight: bold;
-        letter-spacing: -0.025em;
-        vertical-align: top;
-        padding-top: 0px;
-    }
-    .one-third {
-        display: block;
-        width: 100%;
-    }
-    .hh {
-        height: 100%;
-    }
-    #cancelButton {
-        top: 15px;
+    .closeButton {
+        padding-right: 2%;
     }
 }
+
+
+/* ipad */
 
 @media screen and (max-width: 790px) and (min-width: 402px) {
     body {
@@ -510,70 +309,32 @@ body.w-o * {
         height: 100vh;
         margin: 0px;
     }
-    #workBlock {
-        padding-top: 5%;
-        width: 80%;
-        padding-left: 5%;
-        position: absolute;
-        padding-bottom: 20%;
+    .work-head h1 {
+        font-size: 1em;
     }
-    h1,
-    h2,
-    p {
-        font-size: 4.25rem;
-        font-weight: 400;
-        line-height: 0.8;
-    }
-    p {
-        padding: 0px;
-    }
-    #aboutBlock p {
-        padding-top: 5%;
-        font-size: 2.5rem;
-        line-height: 1.2;
-    }
-    .flex {
-        width: 300px;
-        /* height: 600px; */
-        margin: auto;
-        display: flex;
+    .project {
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
-    .grid p {
-        font-size: 3.25rem;
-        font-weight: 400;
-        line-height: 0.8;
+    .project-head {
+        font-size: 36px;
+        max-width: 90%;
+        padding: 0 0 8% 0;
     }
-    .grid__item {
-        padding-top: 25px;
-        vertical-align: top;
-        width: 100%;
+    .project-content {
+        width: 60%
     }
-    .one-whole {
-        /* width: 75%; */
+    .project-content p {
+        padding: 0;
     }
-    .large--two-thirds {
-        font-size: 0.5em;
-        display: block;
-        width: 100%;
+    .closeButton {
+        padding-right: 5%;
     }
-    .smallest {
-        font-size: 0.23em;
-        font-weight: bold;
-        letter-spacing: -0.025em;
-        vertical-align: top;
-        padding-top: 0px;
-    }
-    .one-third {
-        display: block;
-        width: 100%;
-    }
-    .hh {
-        height: 100%;
-    }
-    #cancelButton {
-        top: 15px;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 1020px) {
+    .closeButton {
+        padding-right: 5%;
     }
 }
 
