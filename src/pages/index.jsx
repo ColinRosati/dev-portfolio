@@ -1,4 +1,5 @@
 import React from 'react'; 
+import tapOrClick from 'react-tap-or-click'
 import '../styles/index.css'
 import {
   BrowserRouter as Router,
@@ -16,30 +17,23 @@ const IndexPage = () => {
 
   function CloseHead(props) {
 
-    const handleClick = (e) => {
-      console.log("close")
-        e.preventDefault();
-        document.body.classList.toggle("hide")
-        setTimeout(() => {
-          return <Router><Route exact path="/" component={IndexSite} /> </Router>
-        }, 500)
-    }
+    // const handleEnter = (e) => {
+    //     let close =  document.getElementsByClassName('close-wrapper')
+    //     var x = document.getElementsByClassName('closeButton')[0]
+    //     console.log(x)
+    //     x.classlist.add("rotate")
+    // }
+    
+    const handleClick = (event) => {
+      // event.preventDefault();
+      document.body.classList.add("hide")
+      setTimeout(() => {
+        window.location = "/";
+      }, 500)
+  }
 
-    const handleEnter = (e) => {
-      // console.log("enter",e, e.target.className)
-        let close =  document.getElementsByClassName('close-wrapper')
-        // console.log(close, typeof close, e.target.className)
-        // document.getElementsByClassName('close-wrapper')
-        var x = document.getElementsByClassName('closeButton')[0]
-        console.log(x)
-        // document.getElementsByClassName
-        // document.getElementById("closerButton").classList.add("rotate");
-        x.classlist.add("rotate")
-       
-    }
-    // return <button onClick={handleClick}>cilck</button>
-    return (
-      <div className="close-wrapper" onClick={handleClick} onMouseEnter={handleEnter} >
+  return (
+      <div className="close-wrapper" {...tapOrClick(handleClick) }>
         <CloseImage href={IndexPage} ></CloseImage>
       </div>
     )

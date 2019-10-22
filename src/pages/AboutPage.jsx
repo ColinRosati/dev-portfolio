@@ -1,10 +1,11 @@
 import React from 'react'; 
 import styled from 'styled-components';
+import tapOrClick from 'react-tap-or-click'
 import '../styles/about.css'
-import {
-    BrowserRouter as Router,
-    Route,
-  } from "react-router-dom";
+// import {
+//     BrowserRouter as Router,
+//     Link
+//   } from "react-router-dom";
 import IndexPage from "./index"
 
 import closeImg from '../assets/cancel-button.png'
@@ -24,16 +25,16 @@ const About = () => {
 
 function CloseHead(props) {
 
-    const handleClick = (e) => {
-        e.preventDefault();
+    const handleClick = (event) => {
+        // event.preventDefault();
         document.body.classList.add("hide")
         setTimeout(() => {
-          return <Router><Route exact path="/" component={IndexPage} /> </Router>
+          window.location = "/";
         }, 500)
     }
 
     return (
-        <div className="close-wrapper" onClick={handleClick} >
+        <div className="close-wrapper" {...tapOrClick(handleClick) }>
           <CloseImage href={IndexPage} ></CloseImage>
         </div>
       )

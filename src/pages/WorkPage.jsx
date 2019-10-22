@@ -1,4 +1,5 @@
 import React from 'react'; 
+import tapOrClick from 'react-tap-or-click'
 import '../styles/index.css'
 import IndexPage from "./index"
 
@@ -9,18 +10,19 @@ const WorkPage = () => {
   } 
 
   function CloseHead(props) {
-      function handleClick() {
-          document.body.classList.add("hide")
-          setTimeout(() => {
-              window.location = "file:///C:/Users/colin/Documents/work/Portfolio%20Developer/index.html";
-          }, 500)
-      }
+    const handleClick = (event) => {
+      // event.preventDefault();
+      document.body.classList.add("hide")
+      setTimeout(() => {
+        window.location = "/";
+      }, 500)
+  }
 
-      return ( 
-          <a href ={IndexPage} onClick = { handleClick } >
-              <CloseImage></CloseImage>
-          </a >
-      );
+  return (
+      <div className="close-wrapper" {...tapOrClick(handleClick) }>
+        <CloseImage href={IndexPage} ></CloseImage>
+      </div>
+    )
   }
 
   function HeadTitle(props) {
