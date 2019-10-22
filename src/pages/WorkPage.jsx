@@ -1,12 +1,18 @@
 import React from 'react'; 
 import tapOrClick from 'react-tap-or-click'
-import '../styles/index.css'
+import '../styles/work.css'
 import IndexPage from "./index"
+
+import closeImg from '../assets/cancel-button.png'
 
 const WorkPage = () => {
   
   function CloseImage(props) {
-    // return <img src="img/cancel-button.png" className="closeButton"></img>
+    return (
+      <a href={props.hrefname}>
+          <img src={closeImg} className="closeButton" alt=""></img>
+      </a>
+  )
   } 
 
   function CloseHead(props) {
@@ -25,55 +31,56 @@ const WorkPage = () => {
     )
   }
 
-  function HeadTitle(props) {
-      return <h1>{props.children}</h1>
+
+  const WorkHead = () => {
+    return (
+      <div className="work-head"><h1>Recent Projects</h1></div>
+    )
   }
 
-  const linkStyle = {
-      color: 'black'        
+  const Projects = (props) => {
+    return (
+      <div >
+      <div className="project">
+        <div className="project-head">
+        <a href={props.link}><h6>{props.head}</h6></a>
+        </div>
+        <div className="project-content">
+        <a href={props.link}><p>{props.link}</p></a>
+        <p>{props.details}</p>
+        </div>
+        </div>
+        <hr></hr>
+      </div>
+    
+    )
   }
 
-  const linkStyleHover = {
-      color: 'blue',
-      marginleft: '10px'    
+
+  // project -> Project-Head -> Project-link -> Project-detail
+  const ProjectBody = () => {
+    
+    return(
+      <div>
+        <WorkHead/>
+        <Projects head={"Bunker3"} link={"www.bunker3.ca"} details={"Data Visualization →Design, Development, D3.js"}/>
+        <Projects head={"Agar Studio"} link={"www.agarstudio.com"} details={"Design Studio →Development"}/>
+        <Projects head={"FTI Scope Data Collector web app"} link={"Raspberry PI Server"} details={"Web App & Raspberry Pi server →Design, Development, Node.js, Bash script, SPA"}/>
+        <Projects head={"Contact Page"} link={"www.bunker3.ca"} details={"Data Visualization →Design, Development, D3.js"}/>
+        <Projects head={"Gnothi Sauton"} link={"gnothisauton.xyz"} details={"Speculative Design → Development, Bootstrap.js"}/>
+        <Projects head={"Whatify"} link={"whatify.world"} details={"Speculative Design → Development, Bootstrap.js, FaceBook API"}/>
+      </div>
+    )
   }
-
-  function hovering(props){
-      console.log("hovering")
-  }
-
-  function LinkTitle(url) {
-      return <a href={url.href} 
-                style={linkStyle}
-                >{url.children}</a>
-  }
-
-  function LinkTitleHover(url) {
-      return <a href={url.href} 
-                style={linkStyleHover}
-                >{url.children}</a>
-  }
-
-    function Nav (props){
-      var aboutL = "http://localhost/developerportfolio-react/about.html";
-      var workL = "http://localhost/developerportfolio-react/work.html";
-      var contactL = "contact.html";
-
-      return(
-          <div  className="content">
-          <HeadTitle>Colin Rosati</HeadTitle>
-          <LinkTitle href={aboutL} className="navLink" onHover={hovering}><h2>About</h2></LinkTitle>
-          <LinkTitle href={workL} className="navLink"><h2>Work</h2></LinkTitle>
-          <LinkTitle href={contactL} className="navLink" ><h2>Contact</h2></LinkTitle>
-          <LinkTitleHover className="navLink" onMouseEnter={hovering}><h2>Contact</h2></LinkTitleHover>
-          </div>
-      )
-    }
 
     const AppBody = ()=>{
+
+      
       return(
-        <CloseHead/>,
-        <Nav/>
+        <div className="App">
+          <CloseHead/>
+          <ProjectBody/>
+        </div>
       )
     }
        

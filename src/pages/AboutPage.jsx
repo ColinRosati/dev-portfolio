@@ -15,7 +15,6 @@ import portraitImg from '../assets/headshot.png'
 const About = () => {
     
   function CloseImage(props) {
-      console.log("props",props)
     return (
         <a href={props.hrefname}>
             <img src={closeImg} className="closeButton" alt=""></img>
