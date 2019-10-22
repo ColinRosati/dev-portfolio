@@ -76,7 +76,6 @@ const IndexPage = () => {
           <LinkTitle href={aboutL} className="navLink" onHover={hovering}><h2>About</h2></LinkTitle>
           <LinkTitle href={workL} className="navLink"><h2>Work</h2></LinkTitle>
           <LinkTitle href={contactL} className="navLink" ><h2>Contact</h2></LinkTitle>
-          <LinkTitleHover className="navLink" onMouseEnter={hovering}><h2>Contact</h2></LinkTitleHover>
           </div>
       )
     }
