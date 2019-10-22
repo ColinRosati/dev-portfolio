@@ -73,9 +73,9 @@ const IndexPage = () => {
       return(
           <div  className="content">
           <HeadTitle>Colin Rosati</HeadTitle>
-          <LinkTitle href={aboutL} className="navLink" onHover={hovering}><h2>About</h2></LinkTitle>
-          <LinkTitle href={workL} className="navLink"><h2>Work</h2></LinkTitle>
-          <LinkTitle href={contactL} className="navLink" ><h2>Contact</h2></LinkTitle>
+          <LinkTitle href={aboutL} className="navLink" onHover={hovering}><h2 className="nav">About</h2></LinkTitle>
+          <LinkTitle href={workL} className="navLink"><h2 className="nav">Work</h2></LinkTitle>
+          <LinkTitle href={contactL} className="navLink" ><h2 className="nav">Contact</h2></LinkTitle>
           </div>
       )
     }
