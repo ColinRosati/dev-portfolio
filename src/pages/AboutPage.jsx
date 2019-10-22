@@ -126,7 +126,7 @@ function CloseHead(props) {
           <div>
               <TextBox/>
               <ImgBox/>
-              <Footer/>
+              {/* <Footer/> */}
           </div>
       )
   }
