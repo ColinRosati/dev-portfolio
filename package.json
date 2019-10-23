@@ -1,39 +1,47 @@
 {
-  "name": "dev-portfolio-cra",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@chakra-ui/core": "^0.4.1",
-    "@emotion/core": "^10.0.21",
-    "@emotion/styled": "^10.0.17",
-    "emotion-theming": "^10.0.19",
-    "react": "^16.7.0-alpha.0",
-    "react-dom": "^16.7.0-alpha.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
-    "react-tap-or-click": "^0.2.1",
-    "react-toastify": "^5.4.0",
-    "styled-components": "^4.4.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "dev-portfolio-cra",
+    "homepage": "http://rosati.space/",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@chakra-ui/core": "^0.4.1",
+        "@emotion/core": "^10.0.21",
+        "@emotion/styled": "^10.0.17",
+        "chromedriver": "^77.0.0",
+        "emotion-theming": "^10.0.19",
+        "geckodriver": "^1.19.0",
+        "react": "^16.7.0-alpha.0",
+        "react-dom": "^16.7.0-alpha.0",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "3.2.0",
+        "react-tap-or-click": "^0.2.1",
+        "react-toastify": "^5.4.0",
+        "selenium-webdriver": "^4.0.0-alpha.5",
+        "styled-components": "^4.4.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "s-test": "mocha test"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "mocha": "^6.2.2"
+    }
 }

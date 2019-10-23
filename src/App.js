@@ -19,8 +19,9 @@ class App extends React.Component {
       <Router>
         <Switch>
           <Route exact path="/" component={IndexPage} />
-          <Route path="/about" component={About} />
-          <Route exact path="/work" component={WorkPage} />
+          <Route exact path="/index" component={IndexPage} />
+          <Route exact path="/about" component={About} />
+          <Route exact exact path="/work" component={WorkPage} />
           <Route component={NotFound}/>
           {/* <Link to="/about">about</Link> */}
         </Switch>
