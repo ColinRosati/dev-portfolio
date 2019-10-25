@@ -184,6 +184,13 @@ a {
     h2 {
         font-size: 0.75em;
     }
+    .closeButton {
+        width: 10%;
+        padding-top: 10px;
+        position: fixed;
+        z-index: 150;
+        padding-right: 0%;
+    }
 }
 
 @media screen and (max-width: 400px) and (min-width: 360px) {
@@ -202,6 +209,13 @@ a {
     h2 {
         font-size: 0.85em;
     }
+    .closeButton {
+        width: 10%;
+        padding-top: 10px;
+        position: fixed;
+        z-index: 150;
+        padding-right: 0%;
+    }
 }
 
 @media screen and (max-width: 414px) and (min-width: 401px) {
@@ -211,6 +225,13 @@ a {
         padding-right: 30px;
         height: 100vh;
         margin: 0px;
+    }
+    .closeButton {
+        width: 10%;
+        padding-top: 10px;
+        position: fixed;
+        z-index: 150;
+        padding-right: 0%;
     }
 }
 
@@ -230,6 +251,13 @@ a {
     }
     h2 {
         font-size: 0.85em;
+    }
+    .closeButton {
+        width: 10%;
+        padding-top: 10px;
+        position: fixed;
+        z-index: 150;
+        padding-right: 0%;
     }
 }
 

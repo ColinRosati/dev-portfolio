@@ -219,7 +219,7 @@
             line-height: 0.8;
         }
         .aboutBlock p {
-            font-size: 2.75rem;
+            font-size: 2.15rem;
             font-weight: 400;
             line-height: 1.1;
             padding: 25px;
@@ -238,16 +238,15 @@
         }
         .closeButton {
             width: 10%;
-            padding-top: 10px;
+            padding-top: 1px;
             position: fixed;
             z-index: 150;
-            padding-right: 17%;
+            padding-right: 1%;
         }
         .toast-wrapper {
-            display: flex;
-            justify-content: flex-end;
-            width: 80%;
             padding: 5% 0% 30% 5%;
+            position: absolute;
+            bottom: -75%;
         }
     }
     /* iphone 6, 7, 8 */
@@ -268,7 +267,7 @@
         p {
             padding: 0px;
         }
-        #aboutBlock p {
+        .aboutBlock p {
             font-size: 2.3rem;
             line-height: 1.4;
         }
@@ -286,6 +285,11 @@
             position: fixed;
             z-index: 150;
             padding-right: 20%;
+        }
+        .toast-wrapper {
+            padding: 5% 0% 30% 5%;
+            position: absolute;
+            bottom: -65%;
         }
     }
     /* iphone plus 6+, 7+, 8+ */
@@ -306,7 +310,7 @@
         p {
             padding: 0px 15px 0px 0px;
         }
-        #aboutBlock p {
+        .aboutBlock p {
             padding-top: 5%;
             font-size: 2.5rem;
             line-height: 1.2;
@@ -325,6 +329,11 @@
             position: fixed;
             z-index: 150;
             padding-right: 20%;
+        }
+        .toast-wrapper {
+            padding: 5% 0% 30% 5%;
+            position: absolute;
+            bottom: -65%;
         }
     }
     /* IPADs */
@@ -364,6 +373,11 @@
             position: fixed;
             z-index: 150;
             padding-right: 20%;
+        }
+        .toast-wrapper {
+            padding: 5% 0% 30% 5%;
+            position: absolute;
+            bottom: %;
         }
     }
     

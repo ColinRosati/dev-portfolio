@@ -224,10 +224,12 @@ a {
     }
     .closeButton {
         width: 10%;
-        padding-top: 10px;
+        padding-top: 1px;
+        top: 15px;
+        right: 20px;
         position: fixed;
         z-index: 150;
-        padding-right: 5%;
+        padding-right: 0%;
     }
 }
 
@@ -237,8 +239,8 @@ a {
 @media screen and (max-width: 400px) and (min-width: 360px) {
     body {
         padding-top: 45px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 0px;
         height: 100vh;
     }
     .work-head h1 {
@@ -260,7 +262,9 @@ a {
         padding: 0;
     }
     .closeButton {
-        padding-right: 5%;
+        top: 5px;
+        right: 15px;
+        padding-right: 0%;
     }
 }
 
@@ -328,7 +332,9 @@ a {
         padding: 0;
     }
     .closeButton {
-        padding-right: 5%;
+        top: 5px;
+        right: 15px;
+        padding-right: 0%;
     }
 }
 
