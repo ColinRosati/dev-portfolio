@@ -4,9 +4,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function ToastUISkills() {
-    const [steps, setSteps] = useState(0);
+    var [steps, setSteps] = useState(0);
     var [faces, setFace] = useState('🌞');
     var smiles = '🌞';
+    var i = 1;
     const notify = () => toast( {
       onOpen: () => {
        
@@ -37,24 +38,28 @@ function ToastUISkills() {
 
   
     function Msg(props){
-      if(steps >= 14){
+      if(steps >= 13){
         setSteps(0);
       }else{
-        setSteps(steps => steps + 1);
+        
+        setSteps(steps + props.num);
+        console.log(items[steps], steps)
+        
       }
      
-      if(steps%2 != 0){
-        smiles = '🌞'
-        console.log("even", faces)
-        setFace('🌞');
+      // if(steps%2 != 0){
+      //   smiles = '🌞'
+      //   // console.log("even", faces)
+      //   setFace('🌞');
         
-      }else{
-        console.log("odd",faces)
-        smiles = '🌚'
-        setFace('🌚');
-      }
+      // }else{
+      //   // console.log("odd",faces)
+      //   smiles = '🌚'
+      //   setFace('🌚');
+      // }
 
-      setFace(0)
+      // setFace(0)
+      
 
       return (
                 <div>
@@ -67,7 +72,7 @@ function ToastUISkills() {
       <div className="toast-wrapper" >
         <div className="toast-ui" onClick={() =>{
 
-          toast(<Msg items={items}/>, options) 
+          toast(<Msg items={items} num={i}/>, options) 
           }}><span>{smiles}</span></div>
       </div>
     );

@@ -117,13 +117,6 @@ hr {
     border-top: 3px solid #000;
 }
 
-a {
-    /* display: inline-block; */
-    position: relative;
-    text-decoration: underline;
-    color: #000;
-}
-
 .project-content p {
     margin-top: 0;
     font-size: 1.25rem;
