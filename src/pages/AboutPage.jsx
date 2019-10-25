@@ -41,7 +41,7 @@ function CloseHead(props) {
   function TextBox(props){
       return(
       <div className="aboutBlock">
-          <p>I am a Software Developer that works between art, design and development. Pushing the boundary of digital experiences with creative solutions excites me. My work centers around being critical and endlessly curious. Currently I am based in
+          <p>I am a Developer that works between development and design. I aim to push the boundary of digital design by making clean and usable code. What excites me most, besides always learning, is developing beautiful experiences. My work arises out of being critical about the world. This means I think about the "bigger picture" asking all of the "why" questions before developing. Yes, I am introspective but also very much a people person excited to share and learn. Currently I am based in
           Berlin.
           </p>
       </div>
