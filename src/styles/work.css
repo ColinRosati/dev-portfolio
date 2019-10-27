@@ -176,6 +176,11 @@ hr {
     max-width: 40%;
 }
 
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
 .project-content {
     padding: 0 7% 0 0;
     width: 30%;
