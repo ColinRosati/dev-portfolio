@@ -17,7 +17,7 @@ function ToastUISkills() {
     });
 
     const items = [
-      "Javascript","React","Node","ES6", "Bootstrap","D3","C","PHP", "HTML", "CSS","SASS", "Python", "Bash","Docker"
+      "Javascript","React","Node","ES6", "Bootstrap","D3","Webpack", "Jest", "Mocha" ,"C","PHP", "HTML", "CSS","SASS", "Python", "Bash","Docker"
     ]
 
     const options = {
@@ -35,7 +35,7 @@ function ToastUISkills() {
     });
 
     function Msg(props){
-      if(steps >= 13){
+      if(steps >= (items.length - 1)){
         setSteps(0);
       }else{
         setSteps(steps + props.num);
