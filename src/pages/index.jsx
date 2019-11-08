@@ -90,9 +90,9 @@ const IndexPage = () => {
         this.i = 1
         this.state = {
           
-          x: 1,
-          y: 1,
-          z: 1         
+          x: 0,
+          y: 0,
+          z: 0         
         };
         this.HoverCount = this.HoverCount.bind(this);
         this.handleTouchStart = this.handleTouchStart.bind(this);
