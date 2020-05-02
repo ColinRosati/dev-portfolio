@@ -12,6 +12,7 @@
         "chromedriver": "^77.0.0",
         "emotion-theming": "^10.0.19",
         "geckodriver": "^1.19.0",
+        "node-sass": "^4.14.0",
         "react": "^16.7.0-alpha.0",
         "react-bootstrap": "^1.0.0-beta.14",
         "react-dom": "^16.7.0-alpha.0",
@@ -45,6 +46,9 @@
         ]
     },
     "devDependencies": {
-        "mocha": "^6.2.2"
+        "mocha": "^6.2.2",
+        "react-redux": "^7.2.0",
+        "redux": "^4.0.5",
+        "redux-devtools-extension": "^2.13.8"
     }
 }

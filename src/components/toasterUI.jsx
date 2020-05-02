@@ -1,23 +1,14 @@
 import React, { useState } from 'react'; 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 var smiles = '🌞';
 
 function ToastUISkills() {
     var [steps, setSteps] = useState(0);
     var i = 1;
-    const notify = () => toast( {
-      onOpen: () => {
-        console.log("toast onOpen")
-       
-      },
-      onClose: ({ foo }) => {
-        console.log("toast onClose")
-      }
-    });
 
     const items = [
-      "Javascript","React","Node","ES6", "Bootstrap","D3","Webpack", "Jest", "Mocha" ,"C","PHP", "HTML", "CSS","SASS", "Python", "Bash","Docker"
+      "Javascript", "Typescript", "React", "Redux", "Sagas", "Thunk", "Storybook", "Node", "Nest.js","D3","Webpack", "Jest", "Cypress" ,"C","PHP", "HTML", "CSS","SASS", "Python", "Bash","Docker"
     ]
 
     const options = {
@@ -41,7 +32,7 @@ function ToastUISkills() {
         setSteps(steps + props.num);
       }
     
-      if(steps%2 != 0){
+      if(steps%2 !== 0){
         smiles = '🌞'
       }else{
         smiles = '🌚'
