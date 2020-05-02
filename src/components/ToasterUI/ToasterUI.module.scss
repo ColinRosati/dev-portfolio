@@ -1,0 +1,54 @@
+.Toastify {
+  background: #fff;
+  color: rgb(0, 255, 55);
+}
+
+.toastWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  padding: 5%;
+  transition: all 0.3s;
+}
+
+.toastWrapper:hover {
+  transition: all 0.4s linear 0.1s;
+  width: 81%;
+}
+/* ============================================= Responsive ============================================= */
+/* tiny screens  iphone 5 */
+
+@media (max-width: 320px) {
+  .toastWrapper {
+    padding: 5% 0% 30% 5%;
+    position: absolute;
+    bottom: -75%;
+  }
+}
+/* iphone 6, 7, 8 */
+
+@media screen and (max-width: 400px) and (min-width: 360px) {
+  .toastWrapper {
+    padding: 5% 0% 30% 5%;
+    position: absolute;
+    bottom: -65%;
+  }
+}
+/* iphone plus 6+, 7+, 8+ */
+
+@media screen and (max-width: 415px) and (min-width: 401px) {
+  .toastWrapper {
+    padding: 5% 0% 30% 5%;
+    position: absolute;
+    bottom: -65%;
+  }
+}
+/* IPADs */
+
+@media screen and (max-width: 790px) and (min-width: 415px) {
+  .toastWrapper {
+    padding: 5% 0% 30% 5%;
+    position: absolute;
+    bottom: 10%;
+  }
+}

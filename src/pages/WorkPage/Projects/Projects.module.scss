@@ -1,0 +1,122 @@
+hr {
+  border-top: 3px solid #000;
+}
+
+.projectContent p {
+  margin-top: 0;
+  font-size: 1.25rem;
+  margin-bottom: 90px;
+  padding: 0px 60px;
+  color: #000;
+  line-height: 1.5;
+  display: block;
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectHead {
+  padding: 0 0 0 5%;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 40%;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.projectContent {
+  padding: 0 7% 0 0;
+  width: 30%;
+}
+
+/* tiny screens  iphone 5 */
+
+@media (max-width: 320px) {
+  .project {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectHead {
+    font-size: 36px;
+    max-width: 90%;
+    padding: 0 0 8% 0;
+  }
+  .projectContent {
+    width: 60%;
+  }
+  .projectContent p {
+    padding: 0;
+  }
+}
+
+/* iphone 6, 7, 8 */
+
+@media screen and (max-width: 400px) and (min-width: 360px) {
+  .project {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectHead {
+    font-size: 36px;
+    max-width: 90%;
+    padding: 0 0 8% 0;
+  }
+  .projectContent {
+    width: 60%;
+  }
+  .projectContent p {
+    padding: 0;
+  }
+}
+
+/* iphone plus 6+, 7+, 8+ */
+
+@media screen and (max-width: 414px) and (min-width: 401px) {
+  .project {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectHead {
+    font-size: 36px;
+    max-width: 90%;
+    padding: 0 0 8% 0;
+  }
+  .projectContent {
+    width: 60%;
+  }
+  .projectContent p {
+    padding: 0;
+  }
+}
+
+/* ipad */
+
+@media screen and (max-width: 790px) and (min-width: 402px) {
+  .project {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectHead {
+    font-size: 36px;
+    max-width: 90%;
+    padding: 0 0 8% 0;
+  }
+  .projectContent {
+    width: 60%;
+  }
+  .projectContent p {
+    padding: 0;
+  }
+}

@@ -1,39 +1,12 @@
 import React from 'react';
-import '../styles/work.css';
-import CloseHead from '../components/CloseHead'
+import styles from './WorkPage.module.scss';
+import Projects from './Projects'
 
 const WorkPage = () => {
-
-  const WorkHead = () => {
-    return (
-      <div className='work-head'>
+  return (
+    <div >
+        <div className={styles.workHead}>
         <h1>Recent Projects</h1>
-      </div>
-    );
-  };
-
-  const Projects = (props) => {
-    return (
-      <div>
-        <div className='project'>
-          <div className='project-head'>
-            <a href={props.link}>{props.head}</a>
-          </div>
-          <div className='project-content'>
-            {/* <a href={linker}><p>{props.linkTitle}</p></a> */}
-            <p>{props.details}</p>
-          </div>
-        </div>
-        <hr></hr>
-      </div>
-    );
-  };
-
-  // project -> Project-Head -> Project-link -> Project-detail
-  const ProjectBody = () => {
-    return (
-      <div>
-        <WorkHead />
         <Projects
           head={'Universal Basic Income Directory'}
           link={'https://colinrosati1.github.io/ubi/'}
@@ -95,21 +68,6 @@ const WorkPage = () => {
           details={'Design, Development → HTML, Bootstrap.js, FaceBook API'}
         />
       </div>
-    );
-  };
-
-  const AppBody = () => {
-    return (
-      <div className='App'>
-        <CloseHead />
-        <ProjectBody />
-      </div>
-    );
-  };
-
-  return (
-    <div className='App'>
-      <AppBody />
     </div>
   );
 };

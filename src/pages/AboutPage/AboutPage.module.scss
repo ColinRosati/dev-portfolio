@@ -1,0 +1,389 @@
+body {
+  font-size: 64px;
+  padding: 70px;
+  font-family: Neufile Grotesk Medium Extended, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body.hide {
+  animation: fadeout 0.5s;
+  -moz-animation: fadeout 0.5s;
+  /* Firefox */
+  -webkit-animation: fadeout 0.5s;
+  /* Safari and Chrome */
+  -o-animation: fadeout 0.5s;
+  /* Opera */
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.content {
+  display: block;
+}
+
+.aboutBlock p {
+  font-size: 6.75rem;
+  font-weight: 400;
+  line-height: 1.1;
+  padding: 25px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 90px;
+  padding: 0px 60px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.5;
+  /* display: block; */
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+#aboutBlock,
+.aboutBlock {
+  font-size: 1.3em;
+  font-weight: 200;
+  line-height: 3.5;
+}
+
+#headshot,
+.headshot {
+  /* margin: 0 auto; */
+  width: 100%;
+}
+
+.closeButton {
+  width: 10%;
+  right: 10px;
+  top: 10px;
+  position: fixed;
+  z-index: 150;
+}
+
+.flex {
+  width: 600px;
+  /* height: 600px; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-box {
+  width: 500px;
+  /* height: 400px; */
+}
+
+.hide {
+  opacity: 0;
+  z-index: -100;
+  transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+}
+
+.Toastify__toast--default {
+  background: #fff;
+  color: rgb(0, 255, 55);
+}
+
+.toast-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  padding: 5%;
+}
+
+.toast-wrapper:hover {
+  width: 81%;
+}
+/* ============================================= Responsive ============================================= */
+/* tiny screens  iphone 5 */
+
+@media (max-width: 320px) {
+  body {
+    padding-top: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100vh;
+    width: 100vw;
+  }
+  p {
+    font-size: 3.05rem;
+    font-weight: 400;
+    line-height: 0.8;
+  }
+  .aboutBlock p {
+    font-size: 2.15rem;
+    font-weight: 400;
+    line-height: 1.1;
+    padding: 25px;
+  }
+  /* #aboutBlock p {
+            font-size: 2.3rem;
+            line-height: 1.1;
+        } */
+  .flex {
+    width: 220px;
+    /* height: 600px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .closeButton {
+    width: 10%;
+    padding-top: 1px;
+    position: fixed;
+    z-index: 150;
+    padding-right: 1%;
+  }
+  .toast-wrapper {
+    padding: 5% 0% 30% 5%;
+    position: absolute;
+    bottom: -75%;
+  }
+}
+/* iphone 6, 7, 8 */
+
+@media screen and (max-width: 400px) and (min-width: 360px) {
+  body {
+    padding-top: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100vh;
+    width: 100vw;
+  }
+  p {
+    font-size: 3.25rem;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  p {
+    padding: 0px;
+  }
+  .aboutBlock p {
+    font-size: 2.3rem;
+    line-height: 1.4;
+  }
+  .flex {
+    width: 250px;
+    /* height: 600px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .closeButton {
+    width: 10%;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 150;
+    padding-right: 20%;
+  }
+  .toast-wrapper {
+    padding: 5% 0% 30% 5%;
+    position: absolute;
+    bottom: -65%;
+  }
+}
+/* iphone plus 6+, 7+, 8+ */
+
+@media screen and (max-width: 415px) and (min-width: 401px) {
+  body {
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100vh;
+    margin: 0px;
+  }
+  p {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  p {
+    padding: 0px 15px 0px 0px;
+  }
+  .aboutBlock p {
+    padding-top: 5%;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .flex {
+    width: 300px;
+    /* height: 600px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .closeButton {
+    width: 10%;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 150;
+    padding-right: 20%;
+  }
+  .toast-wrapper {
+    padding: 5% 0% 30% 5%;
+    position: absolute;
+    bottom: -65%;
+  }
+}
+/* IPADs */
+
+@media screen and (max-width: 790px) and (min-width: 415px) {
+  body {
+    padding-top: 45px;
+    padding-left: 30px;
+    height: 100vh;
+    margin: 0px;
+  }
+  h1,
+  h2,
+  p {
+    font-size: 4.35rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+  p {
+    padding: 0px;
+    margin: 0px 15px 0px 0px;
+  }
+  .aboutBlock {
+    padding: 15% 0px 25% 0px;
+  }
+  .flex {
+    width: 300px;
+    /* height: 600px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .closeButton {
+    width: 10%;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 150;
+    padding-right: 20%;
+  }
+  .toast-wrapper {
+    padding: 5% 0% 30% 5%;
+    position: absolute;
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 1020px) {
+  .closeButton {
+    width: 10%;
+    padding-top: 5%;
+    position: fixed;
+    z-index: 150;
+    padding-right: 15%;
+  }
+}
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {
+}
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+}
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+}
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {
+}

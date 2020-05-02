@@ -1,15 +1,13 @@
 import React from 'react';
 
-import CloseHead from '../components/CloseHead';
-import ImgBox from '../components/ImgBox';
-import ToastUISkills from '../components/toasterUI';
-import '../styles/about.css';
+import ImgBox from '../../components/ImgBox';
+import ToastUISkills from '../../components/ToasterUI';
+import styles from './AboutPage.module.scss'
 
 const About = () => {
   return (
-    <div className='App'>
-      <CloseHead />
-      <div className='aboutBlock'>
+    <div >
+      <div className={styles.aboutBlock}>
         <p>
           I am a Developer that works between 🍯 development and design.
           Currently I am working as a Frontend Developer at Finiata. I aim to
