@@ -1,20 +1,12 @@
 import React from 'react';
 import tapOrClick from 'react-tap-or-click';
 
-import IndexPage from '../../pages/IndexPage/index';
+import styles from './CloseHead.module.scss';
 import closeImg from '../../assets/cancel-button.png';
 
-function CloseImage(props) {
-  return (
-    <a href={props.hrefname}>
-      <img src={closeImg} className='closeButton' alt=''></img>
-    </a>
-  );
-}
-
 const CloseHead = (props) => {
+
   const handleClick = (event) => {
-    // event.preventDefault();
     document.body.classList.add('hide');
     setTimeout(() => {
       window.location = '/';
@@ -23,7 +15,7 @@ const CloseHead = (props) => {
 
   return (
     <div className='close-wrapper' {...tapOrClick(handleClick)}>
-      <CloseImage href={IndexPage}></CloseImage>
+      <img  src={closeImg} className={styles.closeButton} alt=''></img>
     </div>
   );
 };
