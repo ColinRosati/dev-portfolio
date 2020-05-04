@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './WorkPage.module.scss';
 import Projects from './Projects'
+import CloseHead from '../../components/CloseHead';
 
 const WorkPage = () => {
   return (
     <div >
+      <CloseHead />
         <div className={styles.workHead}>
         <h1>Recent Projects</h1>
         <Projects

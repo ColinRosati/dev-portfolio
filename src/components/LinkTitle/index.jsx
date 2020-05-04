@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './LinkTitle.module.scss'
 
-const LinkTitle = (url) =>{
+const LinkTitle = (props) =>{
     return (
       <div className={styles.NavLinkWrapper}>
-        <a href={url.href} className={styles.linkStyle}>
-          {url.children}
-        </a>
+        <Link to={props.href} className={styles.linkStyle}>
+          {props.children}
+        </Link>
       </div>    
     );
 }

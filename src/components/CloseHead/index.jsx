@@ -1,22 +1,15 @@
 import React from 'react';
-import tapOrClick from 'react-tap-or-click';
+import { Link } from 'react-router-dom'
 
 import styles from './CloseHead.module.scss';
 import closeImg from '../../assets/cancel-button.png';
 
 const CloseHead = (props) => {
 
-  const handleClick = (event) => {
-    document.body.classList.add('hide');
-    setTimeout(() => {
-      window.location = '/';
-    }, 500);
-  };
-
   return (
-    <div className='close-wrapper' {...tapOrClick(handleClick)}>
+    <Link to={'/'} className='close-wrapper'>
       <img  src={closeImg} className={styles.closeButton} alt=''></img>
-    </div>
+    </Link>
   );
 };
 

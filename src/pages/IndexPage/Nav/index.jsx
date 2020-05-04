@@ -1,6 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import { connect, useDispatch} from 'react-redux';
 import Badge from 'react-bootstrap/Button';
 
 import styles from './Nav.module.scss';
@@ -74,7 +73,7 @@ const Nav = (props) => {
           {props.countZ}
         </Badge>
       </LinkTitle>
-    </div>
+    </div> 
   );
 };
 
