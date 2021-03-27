@@ -1,0 +1,627 @@
+body {
+  font-size: 64px;
+  padding: 70px;
+  font-family: Neufile Grotesk Medium Extended, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body.hide {
+  animation: fadeout 0.5s;
+  -moz-animation: fadeout 0.5s;
+  /* Firefox */
+  -webkit-animation: fadeout 0.5s;
+  /* Safari and Chrome */
+  -o-animation: fadeout 0.5s;
+  /* Opera */
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.content {
+  display: block;
+}
+
+h1,
+h2,
+p {
+  font-size: 6.25rem;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.navLink {
+  display: block;
+}
+
+a {
+  /* display: inline-block; */
+  position: relative;
+  text-decoration: underline;
+  color: #000;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 90px;
+  padding: 0px 60px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* 
+#contact {
+    border-bottom: 0px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #fff;
+    position: relative;
+    top: 1px;
+    width: 30%;
+} */
+
+#aboutBlock,
+.aboutBlock {
+  font-size: 1.3em;
+  font-weight: 200;
+  line-height: 3.5;
+}
+
+#headshot,
+.headshot {
+  /* margin: 0 auto; */
+  width: 100%;
+}
+
+#cancelButton {
+  width: 10%;
+  right: 10px;
+  top: 10px;
+  position: fixed;
+  z-index: 150;
+}
+
+.flex {
+  width: 600px;
+  /* height: 600px; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-box {
+  width: 500px;
+  /* height: 400px; */
+}
+
+#splash {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+  /* background-color: #fff; */
+  /* z-index: 100; */
+  /* opacity: 1; */
+  /* transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    -webkit-transition: all 2s; */
+}
+
+.hide {
+  opacity: 0;
+  z-index: -100;
+  transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+}
+
+/* ============================================= work grid ============================================= */
+
+#workBlock {
+  padding-top: 5%;
+  width: 90%;
+  position: absolute;
+  padding-bottom: 20%;
+}
+
+hr {
+  /* border-top: 3px solid #000; */
+}
+
+.grid--full {
+  margin-left: 0;
+}
+
+.grid,
+.grid--rev,
+.grid--full,
+.grid-uniform {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -25px;
+}
+
+.client-group {
+  /* border-style: solid; */
+  /* border-radius: 3px; */
+  margin-top: -3px;
+  /* position: relative; */
+  z-index: 100;
+}
+
+.grid__item {
+  box-sizing: border-box;
+  float: left;
+  min-height: 1px;
+  padding: 25px;
+  vertical-align: top;
+  width: 100%;
+}
+
+.large--two-thirds {
+  width: 66.666%;
+}
+
+.one-whole {
+  width: 100%;
+  /* border-style: solid; */
+  /* border-radius: 5px; */
+  border-bottom: solid 3px;
+}
+
+.one-third {
+  width: 33.333%;
+}
+
+.smallest {
+  font-size: 0.33em;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  vertical-align: top;
+}
+
+html.w-o *,
+body.w-o * {
+  /* background-color: transparent;
+    border-color: #000;
+    color: #000; */
+}
+
+.circle-c {
+  width: 106px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.circle-c .circle {
+  width: 90px;
+  height: 90px;
+}
+
+.circle-c .circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: table;
+}
+
+.client-content {
+  /* height: 115px; */
+  /* width: calc(100% - 110px); */
+}
+
+.bb {
+  /* border-bottom-width: 4.5px; */
+}
+
+.br {
+  /* border-right-width: 4.5px; */
+}
+
+.bl {
+  /* border-left-width: 4.5px; */
+}
+
+.hh {
+  height: 60px;
+  margin: 10px;
+}
+
+.mh {
+  height: 131px;
+  /* overflow: hidden; */
+}
+
+/* ============================================= Responsive ============================================= */
+
+@media (max-width: 320px) {
+  body {
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100vh;
+  }
+  #workBlock {
+    padding-top: 5%;
+    width: 80%;
+    padding-left: 2%;
+    /* position: absolute; */
+    padding-bottom: 20%;
+  }
+  h1,
+  h2,
+  p {
+    font-size: 3.25rem;
+    font-weight: 400;
+    line-height: 0.8;
+  }
+  p {
+    padding: 0px;
+  }
+  #aboutBlock p {
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+  .flex {
+    width: 220px;
+    /* height: 600px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .large--two-thirds {
+    font-size: 0.5em;
+    display: block;
+    width: 100%;
+  }
+  .smallest {
+    font-size: 0.23em;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    vertical-align: top;
+    padding-top: 0px;
+  }
+  .one-third {
+    display: block;
+    width: 100%;
+  }
+  #cancelButton {
+    padding-right: 1%;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 360px) {
+  body {
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100vh;
+  }
+  #workBlock {
+    padding-top: 5%;
+    /* width: 95%; */
+    /* padding-left: 5%; */
+    /* position: absolute; */
+    padding-bottom: 20%;
+  }
+  h1,
+  h2,
+  p {
+    font-size: 3.25rem;
+    font-weight: 400;
+    line-height: 0.8;
+  }
+  p {
+    padding: 0px;
+  }
+  #aboutBlock p {
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+  .flex {
+    width: 250px;
+    /* height: 600px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .one-whole {
+    /* width: 75%; */
+  }
+  .large--two-thirds {
+    font-size: 0.5em;
+    display: block;
+    width: 100%;
+  }
+  .smallest {
+    font-size: 0.23em;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    vertical-align: top;
+    padding-top: 0px;
+  }
+  .one-third {
+    display: block;
+    width: 100%;
+  }
+  #cancelButton {
+    padding-right: 1%;
+  }
+  .client-group {
+    width: 90%;
+    margin-left: 0%;
+  }
+  .hh {
+    height: 100%;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) and (min-width: 401px) {
+  body {
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100vh;
+    margin: 0px;
+  }
+  #workBlock {
+    padding-top: 5%;
+    width: 80%;
+    padding-left: 5%;
+    position: absolute;
+    padding-bottom: 20%;
+  }
+  h1,
+  h2,
+  p {
+    font-size: 4.25rem;
+    font-weight: 400;
+    line-height: 0.8;
+  }
+  p {
+    padding: 0px;
+  }
+  #aboutBlock p {
+    padding-top: 5%;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .flex {
+    width: 300px;
+    /* height: 600px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid p {
+    font-size: 3.25rem;
+    font-weight: 400;
+    line-height: 0.8;
+  }
+  .grid__item {
+    padding-top: 25px;
+    vertical-align: top;
+    width: 100%;
+  }
+  .one-whole {
+    /* width: 75%; */
+  }
+  .large--two-thirds {
+    font-size: 0.5em;
+    display: block;
+    width: 100%;
+  }
+  .smallest {
+    font-size: 0.23em;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    vertical-align: top;
+    padding-top: 0px;
+  }
+  .one-third {
+    display: block;
+    width: 100%;
+  }
+  .hh {
+    height: 100%;
+  }
+  #cancelButton {
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 790px) and (min-width: 402px) {
+  body {
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100vh;
+    margin: 0px;
+  }
+  #workBlock {
+    padding-top: 5%;
+    width: 80%;
+    padding-left: 5%;
+    position: absolute;
+    padding-bottom: 20%;
+  }
+  h1,
+  h2,
+  p {
+    font-size: 4.25rem;
+    font-weight: 400;
+    line-height: 0.8;
+  }
+  p {
+    padding: 0px;
+  }
+  #aboutBlock p {
+    padding-top: 5%;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .flex {
+    width: 300px;
+    /* height: 600px; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid p {
+    font-size: 3.25rem;
+    font-weight: 400;
+    line-height: 0.8;
+  }
+  .grid__item {
+    padding-top: 25px;
+    vertical-align: top;
+    width: 100%;
+  }
+  .one-whole {
+    /* width: 75%; */
+  }
+  .large--two-thirds {
+    font-size: 0.5em;
+    display: block;
+    width: 100%;
+  }
+  .smallest {
+    font-size: 0.23em;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    vertical-align: top;
+    padding-top: 0px;
+  }
+  .one-third {
+    display: block;
+    width: 100%;
+  }
+  .hh {
+    height: 100%;
+  }
+  #cancelButton {
+    top: 15px;
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {
+}
