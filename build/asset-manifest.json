@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/dev-portfolio/static/css/main.75b7b9fc.chunk.css",
+    "main.js": "/dev-portfolio/static/js/main.56606aba.chunk.js",
+    "main.js.map": "/dev-portfolio/static/js/main.56606aba.chunk.js.map",
+    "runtime-main.js": "/dev-portfolio/static/js/runtime-main.c8bfeb32.js",
+    "runtime-main.js.map": "/dev-portfolio/static/js/runtime-main.c8bfeb32.js.map",
+    "static/css/2.5dbdccff.chunk.css": "/dev-portfolio/static/css/2.5dbdccff.chunk.css",
+    "static/js/2.648e66ed.chunk.js": "/dev-portfolio/static/js/2.648e66ed.chunk.js",
+    "static/js/2.648e66ed.chunk.js.map": "/dev-portfolio/static/js/2.648e66ed.chunk.js.map",
+    "index.html": "/dev-portfolio/index.html",
+    "precache-manifest.3ceae1f43db175bb34f3ac7d1d9afb6f.js": "/dev-portfolio/precache-manifest.3ceae1f43db175bb34f3ac7d1d9afb6f.js",
+    "service-worker.js": "/dev-portfolio/service-worker.js",
+    "static/css/2.5dbdccff.chunk.css.map": "/dev-portfolio/static/css/2.5dbdccff.chunk.css.map",
+    "static/css/main.75b7b9fc.chunk.css.map": "/dev-portfolio/static/css/main.75b7b9fc.chunk.css.map",
+    "static/media/cancel-button.png": "/dev-portfolio/static/media/cancel-button.38321d9d.png",
+    "static/media/headshot.png": "/dev-portfolio/static/media/headshot.f11f1874.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8bfeb32.js",
+    "static/css/2.5dbdccff.chunk.css",
+    "static/js/2.648e66ed.chunk.js",
+    "static/css/main.75b7b9fc.chunk.css",
+    "static/js/main.56606aba.chunk.js"
+  ]
+}

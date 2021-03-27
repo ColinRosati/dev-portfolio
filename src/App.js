@@ -13,12 +13,11 @@ import styles from './index.scss';
 
 export default () => {
   const [onEnter, setOnEnter] = useState(false);
-  // useEffect(() => setOnEnter(!onEnter), [onEnter]);
 
     return (
       <Provider store={store}>
          <CSSTransition in={onEnter} timeout={1000} classNames={{ ...styles }}>
-         <Router>
+         <Router basename={'/dev-portfolio/'}>
          <Route render={({ location }) => (
             <Switch location={location}>
               <Route exact path='/contact' component={Contact} />
