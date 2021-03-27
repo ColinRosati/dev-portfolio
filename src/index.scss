@@ -12,10 +12,15 @@ code {
     monospace;
 }
 
-.fade-enter {
+.enter {
   opacity: 0;
 }
-.fade-enter.fade-enter-active {
+
+.enterActive {
   opacity: 1;
-  transition: opacity 0.4s ease-in;
+  transition: all 1s;
+}
+
+.wrapper {
+  width: 99%;
 }

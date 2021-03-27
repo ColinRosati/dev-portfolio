@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Nav from './Nav';
+import FadeTransition from '../../components/FadeTransition'
+
 
 import CloseHead from '../../components/CloseHead';
 
@@ -21,4 +23,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(IndexPage);
+export default connect(mapStateToProps)(FadeTransition(IndexPage));

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './WorkPage.module.scss';
 import Projects from './Projects'
 import CloseHead from '../../components/CloseHead';
+import FadeTransition from '../../components/FadeTransition'
 
 const WorkPage = () => {
   return (
@@ -74,4 +75,4 @@ const WorkPage = () => {
   );
 };
 
-export default WorkPage;
+export default FadeTransition(WorkPage);

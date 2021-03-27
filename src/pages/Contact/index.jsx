@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './Contact.module.scss';
 import CloseHead from '../../components/CloseHead';
+import FadeTransition from '../../components/FadeTransition'
 
 const Contact = () => {
   return (
@@ -12,4 +13,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default FadeTransition(Contact);

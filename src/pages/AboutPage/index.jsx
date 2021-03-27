@@ -4,6 +4,7 @@ import ImgBox from '../../components/ImgBox';
 import CloseHead from '../../components/CloseHead';
 import ToastUISkills from '../../components/ToasterUI';
 import Emoji from '../../components/Emoji'
+import FadeTransition from '../../components/FadeTransition'
 import styles from './AboutPage.module.scss'
 
 const About = () => {
@@ -31,5 +32,5 @@ const About = () => {
   );
 };
 
-export default About;
+export default FadeTransition(About);
 
