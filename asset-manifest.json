@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "rosati.space/static/css/main.75b7b9fc.chunk.css",
-    "main.js": "rosati.space/static/js/main.07933b87.chunk.js",
-    "main.js.map": "rosati.space/static/js/main.07933b87.chunk.js.map",
-    "runtime-main.js": "rosati.space/static/js/runtime-main.4237ee6d.js",
-    "runtime-main.js.map": "rosati.space/static/js/runtime-main.4237ee6d.js.map",
-    "static/css/2.5dbdccff.chunk.css": "rosati.space/static/css/2.5dbdccff.chunk.css",
-    "static/js/2.648e66ed.chunk.js": "rosati.space/static/js/2.648e66ed.chunk.js",
-    "static/js/2.648e66ed.chunk.js.map": "rosati.space/static/js/2.648e66ed.chunk.js.map",
-    "index.html": "rosati.space/index.html",
-    "precache-manifest.9ad4dbb2d4a890e49230684639ab8b51.js": "rosati.space/precache-manifest.9ad4dbb2d4a890e49230684639ab8b51.js",
-    "service-worker.js": "rosati.space/service-worker.js",
-    "static/css/2.5dbdccff.chunk.css.map": "rosati.space/static/css/2.5dbdccff.chunk.css.map",
-    "static/css/main.75b7b9fc.chunk.css.map": "rosati.space/static/css/main.75b7b9fc.chunk.css.map",
-    "static/media/cancel-button.png": "rosati.space/static/media/cancel-button.38321d9d.png",
-    "static/media/headshot.png": "rosati.space/static/media/headshot.f11f1874.png"
+    "main.css": "/dev-portfolio/static/css/main.b7ff967b.chunk.css",
+    "main.js": "/dev-portfolio/static/js/main.df4ffd3a.chunk.js",
+    "main.js.map": "/dev-portfolio/static/js/main.df4ffd3a.chunk.js.map",
+    "runtime-main.js": "/dev-portfolio/static/js/runtime-main.ab4fb69d.js",
+    "runtime-main.js.map": "/dev-portfolio/static/js/runtime-main.ab4fb69d.js.map",
+    "static/css/2.10583f31.chunk.css": "/dev-portfolio/static/css/2.10583f31.chunk.css",
+    "static/js/2.da579c7f.chunk.js": "/dev-portfolio/static/js/2.da579c7f.chunk.js",
+    "static/js/2.da579c7f.chunk.js.map": "/dev-portfolio/static/js/2.da579c7f.chunk.js.map",
+    "index.html": "/dev-portfolio/index.html",
+    "precache-manifest.2e66c7cde3028748972d2f6f2ead1af6.js": "/dev-portfolio/precache-manifest.2e66c7cde3028748972d2f6f2ead1af6.js",
+    "service-worker.js": "/dev-portfolio/service-worker.js",
+    "static/css/2.10583f31.chunk.css.map": "/dev-portfolio/static/css/2.10583f31.chunk.css.map",
+    "static/css/main.b7ff967b.chunk.css.map": "/dev-portfolio/static/css/main.b7ff967b.chunk.css.map",
+    "static/media/cancel-button.png": "/dev-portfolio/static/media/cancel-button.38321d9d.png",
+    "static/media/headshot.png": "/dev-portfolio/static/media/headshot.f11f1874.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4237ee6d.js",
-    "static/css/2.5dbdccff.chunk.css",
-    "static/js/2.648e66ed.chunk.js",
-    "static/css/main.75b7b9fc.chunk.css",
-    "static/js/main.07933b87.chunk.js"
+    "static/js/runtime-main.ab4fb69d.js",
+    "static/css/2.10583f31.chunk.css",
+    "static/js/2.da579c7f.chunk.js",
+    "static/css/main.b7ff967b.chunk.css",
+    "static/js/main.df4ffd3a.chunk.js"
   ]
 }
