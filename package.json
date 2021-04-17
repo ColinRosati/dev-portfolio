@@ -1,6 +1,5 @@
 {
     "name": "dev-portfolio-cra",
-    "homepage": "https://colinrosati.github.io/dev-portfolio/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -31,8 +30,8 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "s-test": "mocha test",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -b master -d build"
+        "predeploy": "npm run build && cp CNAME ./build",
+        "deploy": "gh-pages -b gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
