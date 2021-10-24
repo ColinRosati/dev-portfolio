@@ -34,7 +34,7 @@ const WorkPage = () => {
         />
         <Projects
           head={'Bunker3'}
-          link={'https://www.bunker3.ca'}
+          link={'https://colinrosati.github.io/bunker3/'}
           linkTitle={'Bunker3'}
           details={'Design, Development → D3.js, HTML, ES6'}
         />
