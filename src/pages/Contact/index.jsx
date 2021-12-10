@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className={styles.wrapper}>
       <CloseHead />
-      <div className={styles.header}>colin.james.rosti@gmail.com</div>
+      <div className={styles.header}>colin.james.rosati@gmail.com</div>
     </div>
   );
 };
