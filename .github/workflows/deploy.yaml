@@ -15,10 +15,5 @@ jobs:
         with:
           node-version: "17.2.0"
       - run: npm install
-      - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.5.0
-        with:
-          target_branch: gh-pages
-          build_dir: build
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAGES_GITHUB_TOKEN }}
+      - run: npm deploy
+     
