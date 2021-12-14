@@ -15,5 +15,5 @@ jobs:
         with:
           node-version: "17.2.0"
       - run: npm install
-      - run: npm deploy
+      - run: npm run deploy
      
