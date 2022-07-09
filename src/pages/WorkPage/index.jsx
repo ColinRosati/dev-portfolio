@@ -12,19 +12,19 @@ const WorkPage = () => {
         <h1>Recent Projects</h1>
        
          <Projects
-          head={'Npm package security lighting talk'}
-          link={'https://slides.com/colinrosati/n#/npm-package-secuirity'}
+          head={'Npm package security'}
+          link={'https://slides.com/d/AZOcTJs/live#/npm-package-secuirity'}
           linkTitle={'Npm package security lightning talk'}
           details={
-            'NPM package security → Slide deck for lighthing talk @ Emma sleep'
+            'Lighting talk → Slide deck for lighthing talk @ Emma sleep'
           }
         />
           <Projects
-          head={'Filter with remaining Array method Ecmascript proposal'}
+          head={'[].filterRemaining()'}
           link={'https://github.com/ColinRosati/Filter-with-remaining'}
           linkTitle={'Filter with remaining Ecmascript proposal'}
           details={
-            'Ecmascript Proposal → 🤔'
+            'Ecmascript Proposal → Filter with Remaining Array method proposal 🤔 ES'
           }
         />
          <Projects

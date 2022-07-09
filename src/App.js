@@ -8,6 +8,7 @@ import WorkPage from './pages/WorkPage';
 import Contact from './pages/Contact';
 import IndexPage from './pages/IndexPage';
 import store from './store/store';
+import ToastUISkills from './components/ToasterUI'
 
 import styles from './index.scss';
 
@@ -24,6 +25,7 @@ export default () => {
               <Route exact path='/work' component={WorkPage} />
             </Switch>
         )} />
+          <ToastUISkills />
           </Router>
           </CSSTransition>
       </Provider>
