@@ -14,9 +14,9 @@ const About = () => {
       <div className={styles.aboutBlock}>
         <p>
           I am a Developer that works between <Emoji symbol="🍯"/> development and design.
-          Currently I am working as a Frontend Developer at Finiata. I aim to
+          Currently I am working as a Frontend Developer at Emma Sleep. I aim to
           push the boundary of digital design by making clean and usable code
-          <Emoji symbol="⚡️"/>. I enjoy building PWAs with React <Emoji symbol="&"/> Typescript <Emoji symbol="🛠"/>. What excites me
+          <Emoji symbol="⚡️"/>. I enjoy building PWAs & SSG with React, Vue <Emoji symbol="&"/> Typescript <Emoji symbol="🛠"/>. What excites me
           most, besides always learning, is developing beautiful experiences <Emoji symbol="✨"/>.
           My inspiration rises out of being critical about the world trying to
           solve problems. This means I think about the "bigger picture" asking
