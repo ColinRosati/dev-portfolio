@@ -184,19 +184,6 @@ p {
   width: 81%;
 }
 
-.href {
-  text-decoration: underline;
-  &:hover {
-    animation: underlineTransition 2s alternate infinite;
-    animation-duration: 2s;
-  }
-}
-
-@keyframes underlineTransition {
-  from {text-underline-offset: 0px;}
-  to {text-underline-offset: -100px;}
-}
-
 /* ============================================= Responsive ============================================= */
 /* tiny screens  iphone 5 */
 

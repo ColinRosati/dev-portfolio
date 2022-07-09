@@ -2,9 +2,11 @@ import React from 'react';
 
 import ImgBox from '../../components/ImgBox';
 import CloseHead from '../../components/CloseHead';
-import Emoji from '../../components/Emoji'
-import FadeTransition from '../../components/FadeTransition'
-import styles from './AboutPage.module.scss'
+import Emoji from '../../components/Emoji';
+import FadeTransition from '../../components/FadeTransition';
+import Link from '../../components/Link';
+
+import styles from './AboutPage.module.scss';
 
 const About = () => {
   return (
@@ -13,7 +15,7 @@ const About = () => {
       <div className={styles.aboutBlock}>
         <p>
           I am a Developer that works between <Emoji symbol="🍯"/> development and design.
-          Currently I am working as a Frontend Developer at <a className={styles.href} href="https://team.emma-sleep.com/">Emma Sleep</a>. I aim to
+          Currently I am working as a Frontend Developer at <Link href="https://team.emma-sleep.com/" name="Emma Sleep" canAnimate/>. I aim to
           push the boundary of digital design by making clean and usable code
           <Emoji symbol="⚡️"/>. I enjoy building PWAs & SSG sites with React, Vue <Emoji symbol="&"/> Typescript <Emoji symbol="🛠"/>. What excites me
           most, besides always learning, is developing beautiful experiences <Emoji symbol="✨"/>.

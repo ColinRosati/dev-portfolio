@@ -13,7 +13,7 @@ const WorkPage = () => {
        
          <Projects
           head={'Npm package security'}
-          link={'https://slides.com/d/AZOcTJs/live#/npm-package-secuirity'}
+          link={'https://slides.com/colinrosati/n/fullscreen#/npm-package-secuirity'}
           linkTitle={'Npm package security lightning talk'}
           details={
             'Lighting talk → Slide deck for lighthing talk @ Emma sleep'

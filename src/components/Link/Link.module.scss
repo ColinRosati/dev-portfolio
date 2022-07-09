@@ -1,0 +1,15 @@
+
+.href {
+  text-decoration: underline;
+  cursor: pointer !important;
+  &:hover {
+    animation: underlineTransition 2s alternate infinite;
+    animation-duration: 2s;
+  }
+}
+
+@keyframes underlineTransition {
+  from {text-underline-offset: 0px;}
+  to {text-underline-offset: -100px;}
+}
+
