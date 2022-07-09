@@ -187,7 +187,6 @@ p {
 .href {
   text-decoration: underline;
   &:hover {
-    // text-decoration: overline;
     animation: underlineTransition 2s alternate infinite;
     animation-duration: 2s;
   }
