@@ -26,13 +26,12 @@ function ToastUISkills() {
     'Jest',
     'Cypress',
     'C',
-    'PHP',
     'HTML',
     'CSS',
     'SCSS',
-    'Python',
     'Bash',
     'Docker',
+    'kubernetes',
   ];
 
   const options = {
