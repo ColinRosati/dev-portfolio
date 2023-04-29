@@ -10,7 +10,14 @@ const WorkPage = () => {
       <CloseHead />
         <div className={styles.workHead}>
         <h1>Recent Projects</h1>
-       
+         <Projects
+          head={'GH release script table'}
+          link={'https://github.com/ColinRosati/gh-release-table-script/tree/main'}
+          linkTitle={'GH rellease script'}
+          details={
+            'Dev tool→ Release script to improve release process @ Emma sleep'
+          }
+        />
          <Projects
           head={'Npm package security'}
           link={'https://slides.com/colinrosati/n/fullscreen#/npm-package-secuirity'}
